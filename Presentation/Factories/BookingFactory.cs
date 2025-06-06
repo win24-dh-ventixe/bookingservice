@@ -9,7 +9,8 @@ public class BookingFactory
     {
         return new BookingEntity
         {
-            Name = dto.Name,
+            FirstName = dto.FirstName,
+            LastName = dto.LastName,
             Email = dto.Email,
             EventId = dto.EventId,
             Quantity = dto.Quantity
@@ -21,7 +22,8 @@ public class BookingFactory
         return new BookingDto
         {
             Id = entity.Id,
-            Name = entity.Name,
+            FirstName = entity.FirstName,
+            LastName = entity.LastName,
             Email = entity.Email,
             EventId = entity.EventId,
             Quantity = entity.Quantity,

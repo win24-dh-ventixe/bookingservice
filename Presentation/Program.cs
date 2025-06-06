@@ -50,7 +50,8 @@ using (var scope = app.Services.CreateScope())
     {
         context.Bookings.Add(new BookingEntity
         {
-            Name = "Sample Event",
+            FirstName = "John",
+            LastName = "Doe",
             Email = "mock@example.com",
             EventId = Guid.NewGuid(),
             Quantity = 3
